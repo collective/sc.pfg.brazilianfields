@@ -1,0 +1,11 @@
+Changelog
+=========
+
+0.5 (xxxx-xx-xx)
+----------------
+
+    * PloneFormGen fields based on BrFieldsAndWidgets
+      [erico_andrei]
+    
+    * Initial release
+      [erico_andrei]
