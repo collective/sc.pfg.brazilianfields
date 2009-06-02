@@ -1,33 +1,41 @@
-Products.BrFieldsAndWidgets
-===========================
+sc.pfg.brazilianfields
+======================
 
 Overview
 --------
 
-Products.BrFieldsAndWidgets is a product that aims to help Brazilian developers 
-to deploy AT based content types on a Plone 3 site. 
+sc.pfg.brazilianfields is a product that aims to provide Brazil-specific fields 
+for use with PloneFormGen
 
 
 Requirements
 ------------
 
-    - Plone 3.1.x (http://plone.org/products/plone)
+    - Products.PloneFormGen >= 1.5 (http://plone.org/products/ploneformgen)
     
 Installation
 ------------
     
 To enable this product,on a buildout based installation:
 
-    1. Edit your buildout.cfg and add ``Products.BrFieldsAndWidgets``
+    1. Edit your buildout.cfg and add ``sc.pfg.brazilianfields``
        to the list of eggs to install ::
 
         [buildout]
         ...
         eggs = 
-            Products.BrFieldsAndWidgets
-    
+            ...
+            sc.pfg.brazilianfields
 
-If another package depends on the Products.BrFieldsAndWidgets egg or 
+    2. Tell the plone.recipe.zope2instance recipe to install a ZCML slug::
+
+        [instance]
+        ...
+        zcml = 
+            ...
+            sc.pfg.brazilianfields
+
+If another package depends on the sc.pfg.brazilianfields egg or 
 includes its zcml directly you do not need to specify anything in the 
 buildout configuration: buildout will detect this automatically.
 

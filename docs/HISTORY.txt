@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5 (xxxx-xx-xx)
+0.5 (2009-06-02)
 ----------------
 
     * PloneFormGen fields based on BrFieldsAndWidgets
