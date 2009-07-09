@@ -3,9 +3,8 @@ sc.pfg.brazilianfields
 
 Overview
 --------
-
-sc.pfg.brazilianfields is a product that aims to provide Brazil-specific fields 
-for use with PloneFormGen
+A homage to Brazilian bureaucracy, sc.pfg.brazilianfields aims to provide 
+Brazil-specific fields for use with PloneFormGen
 
 
 Requirements
@@ -16,7 +15,7 @@ Requirements
 Installation
 ------------
     
-To enable this product,on a buildout based installation:
+To enable this product, on a buildout based installation:
 
     1. Edit your buildout.cfg and add ``sc.pfg.brazilianfields``
        to the list of eggs to install ::

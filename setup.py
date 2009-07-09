@@ -5,7 +5,7 @@ version = open(os.path.join("sc", "pfg", "brazilianfields", "version.txt")).read
 
 setup(name='sc.pfg.brazilianfields',
       version=version,
-      description="Brazilian fields and widgets to be used with PloneFormGen",
+      description="A collection Brazilian fieldsto be used with PloneFormGen",
       long_description=open(os.path.join("sc", "pfg", "brazilianfields", "README.txt")).read().decode('UTF8').encode('ASCII', 'replace') + '\n' +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers

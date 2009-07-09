@@ -1,6 +1,18 @@
 Changelog
 =========
 
+0.6 (2009-07-09)
+----------------
+
+    * Fixes an infinite recursion when adding a BrPhoneField
+      [erico_andrei]
+      
+    * Adds our types to the allowed content inside a FieldsetFolder
+      [erico_andrei]
+      
+    * Localization
+      [erico_andrei]
+
 0.5 (2009-06-02)
 ----------------
 
