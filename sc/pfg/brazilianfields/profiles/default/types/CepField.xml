@@ -2,9 +2,9 @@
 <object name="CepField"
    meta_type="Factory-based Type Information with dynamic views"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-   i18n:domain="plone">
- <property name="title">Cep Field</property>
- <property name="description">A field for cep values.</property>
+   i18n:domain="sc.pfg.brazilianfields">
+ <property name="title" i18n:translate="">Cep Field</property>
+ <property name="description" i18n:translate="">A field for cep values.</property>
  <property name="content_icon">StringField.gif</property>
  <property name="content_meta_type">CepField</property>
  <property name="product">sc.pfg.brazilianfields</property>

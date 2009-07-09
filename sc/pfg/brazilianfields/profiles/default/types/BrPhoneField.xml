@@ -2,9 +2,9 @@
 <object name="BrPhoneField"
    meta_type="Factory-based Type Information with dynamic views"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-   i18n:domain="plone">
- <property name="title">BrPhone Field</property>
- <property name="description">A field for brazilian phone values.</property>
+   i18n:domain="sc.pfg.brazilianfields">
+ <property name="title" i18n:translate="">Brazilian Phone</property>
+ <property name="description" i18n:translate="">A field for brazilian phone values.</property>
  <property name="content_icon">StringField.gif</property>
  <property name="content_meta_type">BrPhoneField</property>
  <property name="product">sc.pfg.brazilianfields</property>
