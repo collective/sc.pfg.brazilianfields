@@ -1,10 +1,10 @@
 Changelog
 =========
 
-trunk (2009-11-16)
+0.8 (2009-11-17)
 ------------------
 
-* xxx [Simples Consultoria]
+    * Adding MANIFEST.in to make releaser works [erico_andrei]
 
 
 0.7 (2009-11-14)
