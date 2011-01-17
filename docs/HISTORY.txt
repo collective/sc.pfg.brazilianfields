@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.8.1 (unrealeased)
--------------------
+0.8.1 (2011-01-17)
+------------------
 
     * Fix distribution [erico_andrei]
 
