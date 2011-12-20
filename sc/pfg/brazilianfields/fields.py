@@ -4,16 +4,9 @@ __author__  = 'Simples Consultoria <products@simplesconsultoria.com.br>'
 __docformat__ = 'plaintext'
 
 from Products.Archetypes.public import *
-from Products.Archetypes.utils import shasattr
 
 from Products.ATContentTypes.content.base import registerATCT
-from Products.ATContentTypes.content.base import ATCTContent
-from Products.ATContentTypes.content.schemata import ATContentTypeSchema
-from Products.ATContentTypes.content.schemata import finalizeATCTSchema
-from Products.ATContentTypes.configuration import zconf
-from Products.TALESField import TALESString, TALESLines
-from Products.CMFCore.permissions import View, ModifyPortalContent
-from AccessControl import ClassSecurityInfo
+from Products.CMFCore.permissions import View
 
 from Products.PloneFormGen.content.fieldsBase import *
 
