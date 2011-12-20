@@ -69,6 +69,26 @@ class TestConfig(BaseTestCase):
                             '%s still appearing in search' % mt)
 
 
+class TestContentCreation(BaseTestCase):
+    """ Test content creation """
+
+    def setUp(self):
+        BaseTestCase.setUp(self)
+        self.portal.invokeFactory('Folder', 'folder')
+        self.folder = self.portal['folder']
+        self.folder.invokeFactory('FormFolder', 'ff1')
+        self.ff1 = self.folder['ff1']
+
+    def testCreateFormFolder(self):
+        self.failUnless('ff1' in self.folder.objectIds())
+
+    def testCreateFields(self):
+        for f in CONTENTTYPES:
+            fname = "%s1" % f
+            self.ff1.invokeFactory(f, fname)
+            self.failUnless(fname in self.ff1.objectIds())
+
+
 class TestUninstall(BaseTestCase):
     """ensure product is properly uninstalled"""
 
