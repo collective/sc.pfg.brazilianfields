@@ -52,7 +52,7 @@ class CepField(BaseFormField):
 
         BaseFormField.__init__(self, oid, **kwargs)
 
-        self.fgField = BrFieldsAndWidgets.CepField('fg_string_field',
+        self.fgField = BrFieldsAndWidgets.CEPField('fg_string_field',
             searchable=0,
             required=0,
             write_permission = View,
@@ -74,7 +74,7 @@ class CnpjField(BaseFormField):
 
         BaseFormField.__init__(self, oid, **kwargs)
 
-        self.fgField = BrFieldsAndWidgets.CnpjField('fg_string_field',
+        self.fgField = BrFieldsAndWidgets.CNPJField('fg_string_field',
             searchable=0,
             required=0,
             write_permission = View,
@@ -96,7 +96,7 @@ class CpfField(BaseFormField):
 
         BaseFormField.__init__(self, oid, **kwargs)
 
-        self.fgField = BrFieldsAndWidgets.CpfField('fg_string_field',
+        self.fgField = BrFieldsAndWidgets.CPFField('fg_string_field',
             searchable=0,
             required=0,
             write_permission = View,
