@@ -12,14 +12,7 @@ from Products.CMFCore.permissions import View
 from Products.PloneFormGen.content.fieldsBase import BaseFormField
 from Products.PloneFormGen.content.fieldsBase import BaseFieldSchemaStringDefault
 
-from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import BrPhoneField as brphonefield
-from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CEPField as cepfield
-from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CNPJField as cnpjfield
-from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CPFField as cpffield
-from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import BrPhoneWidget
-from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CEPWidget
-from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CNPJWidget
-from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CPFWidget
+from Products.BrFieldsAndWidgets import BrFieldsAndWidgets 
 
 from sc.pfg.brazilianfields.config import PROJECTNAME
 
@@ -35,11 +28,11 @@ class BrPhoneField(BaseFormField):
         
         BaseFormField.__init__(self, oid, **kwargs)
         
-        self.fgField = brphonefield('fg_string_field',
+        self.fgField = BrFieldsAndWidgets.BrPhoneField('fg_string_field',
             searchable=0,
             required=0,
             write_permission = View,
-            widget=BrPhoneWidget(label=_(u'Phone Number'),
+            widget=BrFieldsAndWidgets.BrPhoneWidget(label=_(u'Phone Number'),
                                  description=_(u'Please inform your complete phone number')),
             )
     
@@ -56,11 +49,11 @@ class CepField(BaseFormField):
         
         BaseFormField.__init__(self, oid, **kwargs)
         
-        self.fgField = cepfield('fg_string_field',
+        self.fgField = BrFieldsAndWidgets.CepField('fg_string_field',
             searchable=0,
             required=0,
             write_permission = View,
-            widget=CEPWidget(label=_(u'CEP'),
+            widget=BrFieldsAndWidgets.CEPWidget(label=_(u'CEP'),
                              description=_(u'Please inform CEP for this address.')),
             )
         
@@ -78,11 +71,11 @@ class CnpjField(BaseFormField):
         
         BaseFormField.__init__(self, oid, **kwargs)
         
-        self.fgField = cnpjfield('fg_string_field',
+        self.fgField = BrFieldsAndWidgets.CnpjField('fg_string_field',
             searchable=0,
             required=0,
             write_permission = View,
-            widget=CNPJWidget(label=_(u'CNPJ'),
+            widget=BrFieldsAndWidgets.CNPJWidget(label=_(u'CNPJ'),
                                  description=_(u'Please inform CNPJ.')),
             )
         
@@ -101,11 +94,11 @@ class CpfField(BaseFormField):
         BaseFormField.__init__(self, oid, **kwargs)
         
         # set a preconfigured field as an instance attribute
-        self.fgField = cpffield('fg_string_field',
+        self.fgField = BrFieldsAndWidgets.CpfField('fg_string_field',
             searchable=0,
             required=0,
             write_permission = View,
-            widget=CPFWidget(label=_(u'CPF'),
+            widget=BrFieldsAndWidgets.CPFWidget(label=_(u'CPF'),
                                  description=_(u'Please inform CPF.')),
             )
         
