@@ -18,4 +18,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Uninstall PFG Brazilian Fields"
+      directory="profiles/uninstall"
+      description="Extension profile for PFG Brazilian Fields."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>
