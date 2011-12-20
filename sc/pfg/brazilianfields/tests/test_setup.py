@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest2 as unittest
 
-from zope.site.hooks import setSite
-
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import TEST_USER_NAME
 from plone.app.testing import login
@@ -32,7 +30,6 @@ class BaseTestCase(unittest.TestCase):
 
     def setUp(self):
         portal = self.layer['portal']
-        setSite(portal)
         self.portal = portal
         self.qi = getattr(self.portal, 'portal_quickinstaller')
         self.pp = getattr(self.portal, 'portal_properties')
@@ -60,16 +57,16 @@ class TestConfig(BaseTestCase):
     """ Ensure we have configured this portal """
 
     def test_disabled_metatypes(self):
-        blacklist = self.pp.navtree_properties['metaTypesNotToList']
+        blacklist = self.pp.navtree_properties.metaTypesNotToList
         for mt in CONTENTTYPES:
-            self.failIf(mt in blacklist,
-                        '%s still appearing in listings' % mt)
+            self.failUnless(mt in blacklist,
+                            '%s still appearing in listings' % mt)
 
     def test_search_metatypes(self):
-        blacklist = self.pp.site_properties['types_not_searched']
+        blacklist = self.pp.site_properties.types_not_searched
         for mt in CONTENTTYPES:
-            self.failIf(mt in blacklist,
-                        '%s still appearing in search' % mt)
+            self.failUnless(mt in blacklist,
+                            '%s still appearing in search' % mt)
 
 
 class TestUninstall(BaseTestCase):
