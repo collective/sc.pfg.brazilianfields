@@ -13,7 +13,7 @@ from Products.PloneFormGen.content.fieldsBase import BaseFormField
 from Products.PloneFormGen.content.fieldsBase import \
                                                  BaseFieldSchemaStringDefault
 
-from Products.BrFieldsAndWidgets import BrFieldsAndWidgets
+from Products.BrFieldsAndWidgets.content import BrFieldsAndWidgets
 
 from sc.pfg.brazilianfields.config import PROJECTNAME
 
