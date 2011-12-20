@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-07-09 19:20+0000\n"
+"POT-Creation-Date: 2011-12-20 16:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,43 +14,67 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#. Default: "A field for brazilian phone values."
 #: ../profiles/default/types/BrPhoneField.xml
 msgid "A field for brazilian phone values."
 msgstr ""
 
-#. Default: "A field for cep values."
 #: ../profiles/default/types/CepField.xml
 msgid "A field for cep values."
 msgstr ""
 
-#. Default: "A field for cnpj values."
 #: ../profiles/default/types/CnpjField.xml
 msgid "A field for cnpj values."
 msgstr ""
 
-#. Default: "A field for cpf values."
 #: ../profiles/default/types/CpfField.xml
 msgid "A field for cpf values."
 msgstr ""
 
-#. Default: "Brazilian Phone"
 #: ../profiles/default/types/BrPhoneField.xml
 msgid "Brazilian Phone"
 msgstr ""
 
-#. Default: "Cep Field"
 #: ../profiles/default/types/CepField.xml
 msgid "Cep Field"
 msgstr ""
 
-#. Default: "Cnpj Field"
 #: ../profiles/default/types/CnpjField.xml
 msgid "Cnpj Field"
 msgstr ""
 
-#. Default: "Cpf Field"
 #: ../profiles/default/types/CpfField.xml
 msgid "Cpf Field"
+msgstr ""
+
+#: ../fields.py:60
+msgid "desc_cep"
+msgstr ""
+
+#: ../fields.py:82
+msgid "desc_cnpj"
+msgstr ""
+
+#: ../fields.py:104
+msgid "desc_cpf"
+msgstr ""
+
+#: ../fields.py:38
+msgid "desc_phone"
+msgstr ""
+
+#: ../fields.py:59
+msgid "label_cep"
+msgstr ""
+
+#: ../fields.py:81
+msgid "label_cnpj"
+msgstr ""
+
+#: ../fields.py:103
+msgid "label_cpf"
+msgstr ""
+
+#: ../fields.py:37
+msgid "label_phone"
 msgstr ""
 
