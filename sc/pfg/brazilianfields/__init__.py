@@ -9,6 +9,8 @@ from sc.pfg.brazilianfields.config import DEFAULT_ADD_CONTENT_PERMISSION
 
 MessageFactory = BaseMessageFactory('sc.pfg.brazilianfields')
 
+from sc.pfg.brazilianfields import fields
+
 
 def initialize(context):
     content_types, constructors, ftis = process_types(
