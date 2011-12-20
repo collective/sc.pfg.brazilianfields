@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.5\n"
-"POT-Creation-Date: 2009-07-09 19:20+0000\n"
-"PO-Revision-Date: 2009-07-09 15:47-0300\n"
+"POT-Creation-Date: 2011-12-20 16:32+0000\n"
+"PO-Revision-Date: 2011-12-20 16:32+0000\n"
 "Last-Translator: Erico Andrei <erico@simplesconsultoria.com.br>\n"
 "Language-Team: Simples Consultoria <contato@simplesconsultoria.com.br>\n"
 "MIME-Version: 1.0\n"
@@ -53,4 +53,36 @@ msgstr "Campo CNPJ"
 #: ../profiles/default/types/CpfField.xml
 msgid "Cpf Field"
 msgstr "Campo CPF"
+
+#: ../fields.py:60
+msgid "desc_cep"
+msgstr "Por favor informe um CEP no formato 11111-111"
+
+#: ../fields.py:82
+msgid "desc_cnpj"
+msgstr "Por favor informe um CNPJ válido."
+
+#: ../fields.py:104
+msgid "desc_cpf"
+msgstr "Por favor informe um CPF válido."
+
+#: ../fields.py:38
+msgid "desc_phone"
+msgstr "Por favor informe um telefone"
+
+#: ../fields.py:59
+msgid "label_cep"
+msgstr "CEP"
+
+#: ../fields.py:81
+msgid "label_cnpj"
+msgstr "CNPJ"
+
+#: ../fields.py:103
+msgid "label_cpf"
+msgstr "CPF"
+
+#: ../fields.py:37
+msgid "label_phone"
+msgstr "Telefone"
 
