@@ -1,1 +1,1 @@
-sc.social.like
+# -*- coding:utf-8 -*-
