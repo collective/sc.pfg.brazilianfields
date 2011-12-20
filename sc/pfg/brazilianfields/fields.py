@@ -1,16 +1,16 @@
+# -*- coding:utf-8 -*-
 """ Form fields, implemented via Archetypes Fields, Validators and Widgets"""
 
 __author__  = 'Simples Consultoria <products@simplesconsultoria.com.br>'
 __docformat__ = 'plaintext'
 
-from Products.Archetypes.public import *
+from Products.Archetypes.public import Schema
 
 from Products.ATContentTypes.content.base import registerATCT
 from Products.CMFCore.permissions import View
 
-from Products.PloneFormGen.content.fieldsBase import *
-
-from sc.pfg.brazilianfields.config import *
+from Products.PloneFormGen.content.fieldsBase import BaseFormField
+from Products.PloneFormGen.content.fieldsBase import BaseFieldSchemaStringDefault
 
 from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import BrPhoneField as brphonefield
 from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CEPField as cepfield
@@ -20,6 +20,8 @@ from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import BrPhoneWidget
 from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CEPWidget
 from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CNPJWidget
 from Products.BrFieldsAndWidgets.BrFieldsAndWidgets import CPFWidget
+
+from sc.pfg.brazilianfields.config import PROJECTNAME
 
 from sc.pfg.brazilianfields import MessageFactory as _
 
