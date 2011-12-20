@@ -5,6 +5,8 @@ from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
 
+from plone.testing import z2
+
 
 class Fixture(PloneSandboxLayer):
 
@@ -14,6 +16,8 @@ class Fixture(PloneSandboxLayer):
         # Load ZCML
         import sc.pfg.brazilianfields
         self.loadZCML(package=sc.pfg.brazilianfields)
+        z2.installProduct(app, 'sc.pfg.brazilianfields')
+        z2.installProduct(app, 'Products.PloneFormGen')
 
     def setUpPloneSite(self, portal):
         # Install into Plone site using portal_setup
