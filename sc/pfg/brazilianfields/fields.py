@@ -34,8 +34,8 @@ class BrPhoneField(BaseFormField):
             searchable=0,
             required=0,
             write_permission = View,
-            widget=BrFieldsAndWidgets.BrPhoneWidget(label=_(u'Phone Number'),
-                                 description=_(u'Please inform your complete phone number')),
+            widget=BrFieldsAndWidgets.BrPhoneWidget(label=_(u'label_phone'),
+                                 description=_(u'desc_phone')),
             )
 
 
@@ -56,8 +56,8 @@ class CepField(BaseFormField):
             searchable=0,
             required=0,
             write_permission = View,
-            widget=BrFieldsAndWidgets.CEPWidget(label=_(u'CEP'),
-                             description=_(u'Please inform CEP for this address.')),
+            widget=BrFieldsAndWidgets.CEPWidget(label=_(u'label_cep'),
+                             description=_(u'desc_cep')),
             )
 
 
@@ -78,8 +78,8 @@ class CnpjField(BaseFormField):
             searchable=0,
             required=0,
             write_permission = View,
-            widget=BrFieldsAndWidgets.CNPJWidget(label=_(u'CNPJ'),
-                                 description=_(u'Please inform CNPJ.')),
+            widget=BrFieldsAndWidgets.CNPJWidget(label=_(u'label_cnpj'),
+                                 description=_(u'desc_cnpj')),
             )
 
 
@@ -100,8 +100,8 @@ class CpfField(BaseFormField):
             searchable=0,
             required=0,
             write_permission = View,
-            widget=BrFieldsAndWidgets.CPFWidget(label=_(u'CPF'),
-                                 description=_(u'Please inform CPF.')),
+            widget=BrFieldsAndWidgets.CPFWidget(label=_(u'label_cpf'),
+                                 description=_(u'desc_cpf')),
             )
 
 
