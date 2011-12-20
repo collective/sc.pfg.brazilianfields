@@ -4,7 +4,7 @@
 set -e
 
 # first, create some pot containing anything
-i18ndude rebuild-pot --pot sc.pfg.brazilianfields.pot --create sc.pfg.brazilianfields --merge manual.pot ../*
+i18ndude rebuild-pot --pot sc.pfg.brazilianfields.pot --create sc.pfg.brazilianfields --merge manual.pot ../
 
 # finally, update the po files
 i18ndude sync --pot sc.pfg.brazilianfields.pot  `find . -iregex '.*\.po$'|grep -v plone`
