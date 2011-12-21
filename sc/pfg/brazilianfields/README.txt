@@ -15,9 +15,11 @@ Brazil-specific fields for use with `PloneFormGen
 Requirements
 ------------
 
-    * Plone 3.3.x / 4.x (http://plone.org/products/plone)
+    * Plone 3.3.x / 4.0.x / 4.1.x (http://plone.org/products/plone)
     
     * Products.PloneFormGen >= 1.5 (http://plone.org/products/ploneformgen)
+
+    * Products.BrFieldsAndWidgets >= 1.1 (https://github.com/collective/Products.BrFieldsAndWidgets)
     
 Installation
 ------------
