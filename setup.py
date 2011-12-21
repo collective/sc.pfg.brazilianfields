@@ -31,7 +31,7 @@ setup(name='sc.pfg.brazilianfields',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'Products.BrFieldsAndWidgets',
+          'Products.BrFieldsAndWidgets>=1.1',
           'Products.PloneFormGen'
       ],
       extras_require={
