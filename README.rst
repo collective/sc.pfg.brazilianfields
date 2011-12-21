@@ -1,6 +1,6 @@
-========================
-sc.pfg.brazilianfields
-========================
+================================================
+Brazilian Fields for Plone Form Gen
+================================================
 
 .. contents:: Table of Contents
    :depth: 2
