@@ -1,7 +1,8 @@
 from setuptools import setup, find_packages
 import os
 
-version = open(os.path.join("sc", "pfg", "brazilianfields", "version.txt")).read().strip()
+version = open(os.path.join("sc", "pfg", "brazilianfields",
+                            "version.txt")).read().strip()
 
 setup(name='sc.pfg.brazilianfields',
       version=version,
@@ -26,12 +27,12 @@ setup(name='sc.pfg.brazilianfields',
       url='https://github.com/collective/sc.pfg.brazilianfields',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['sc','sc.pfg'],
+      namespace_packages=['sc', 'sc.pfg'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'Products.BrFieldsAndWidgets>=1.1',
+          'Products.BrFieldsAndWidgets>=1.2',
           'Products.PloneFormGen'
       ],
       extras_require={
