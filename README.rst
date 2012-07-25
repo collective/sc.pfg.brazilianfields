@@ -19,7 +19,7 @@ Requirements
     
     * Products.PloneFormGen >= 1.5 (http://plone.org/products/ploneformgen)
 
-    * Products.BrFieldsAndWidgets >= 1.1 (https://github.com/collective/Products.BrFieldsAndWidgets)
+    * Products.BrFieldsAndWidgets >= 1.2 (https://github.com/collective/Products.BrFieldsAndWidgets)
     
 Installation
 ------------

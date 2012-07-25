@@ -4,7 +4,7 @@ Changelog
 1.0.1 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
-- Nothing changed yet.
+    * Require Products.BrFieldsAndWidgets >= 1.2 [ericof]
 
 
 1.0 (2011-12-21)
