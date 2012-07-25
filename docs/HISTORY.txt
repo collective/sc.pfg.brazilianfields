@@ -1,7 +1,7 @@
 Changelog
 -----------
 
-1.0.1 (unreleased)
+1.1 (2012-07-24)
 ^^^^^^^^^^^^^^^^^^
 
     * Require Products.BrFieldsAndWidgets >= 1.2 [ericof]
