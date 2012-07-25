@@ -33,7 +33,7 @@ class BrPhoneField(BaseFormField):
         self.fgField = BrFieldsAndWidgets.BrPhoneField('fg_string_field',
             searchable=0,
             required=0,
-            write_permission = View,
+            write_permission=View,
             widget=BrFieldsAndWidgets.BrPhoneWidget(label=_(u'label_phone'),
                                  description=_(u'desc_phone')),
             )
