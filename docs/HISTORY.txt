@@ -4,7 +4,8 @@ Changelog
 1.1.1 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
-- Nothing changed yet.
+    * Resolves issue #1 (Couldn't install sc.pfg.brazilianfields)
+      [cleberjsantos]
 
 
 1.1 (2012-07-24)
